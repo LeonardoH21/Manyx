@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Importe Link do react-router-dom
 import './ForgotPassword.scss';
 import manyxsLogo from './manyxs_logo.png'; // Importe sua imagem da logo aqui
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [showHomeButton, setShowHomeButton] = useState(false);
 
   const handleSendEmail = () => {
     if (email.trim() !== '') {
       setMessage('Enviamos um código de recuperação para seu E-mail!');
+      setShowHomeButton(true);
     } else {
       setMessage('Por favor, informe um E-mail válido.');
     }
@@ -28,6 +31,11 @@ const ForgotPassword = () => {
         Enviar
       </button>
       {message && <p className="message">{message}</p>}
+      {showHomeButton && (
+        <Link to="http://localhost:3000/" className="home-button">
+          Página Inicial
+        </Link>
+      )}
     </div>
   );
 };
