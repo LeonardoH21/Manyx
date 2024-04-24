@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Importe Link do react-router-dom
+import { Link } from 'react-router-dom'; 
 import './ForgotPassword.scss';
-import manyxsLogo from './manyxs_logo.png'; // Importe sua imagem da logo aqui
+import manyxsLogo from './manyxs_logo.png'; 
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
