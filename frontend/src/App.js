@@ -2,6 +2,8 @@ import GlobalStyle from "./styles/global";
 import styled from "styled-components";
 import Form from "./components/Form.js";
 import Grid from "./components/Grid";
+import UserConsultPage from "./pages/UserConsultPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Importe Routes e BrowserRouter
 import { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -37,15 +39,18 @@ function App() {
   }, [setUsers]);
 
   return (
-    <>
+    <Router>
       <Container>
         <Title>Agendamento</Title>
-        <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
+        <Routes> 
+          <Route exact path="/" element={<Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />} /> 
+          <Route path="/consult-users" element={<UserConsultPage />} /> 
+        </Routes>
         <Grid setOnEdit={setOnEdit} users={users} setUsers={setUsers} />
       </Container>
       <ToastContainer autoClose={3000} position="bottom-left" />
       <GlobalStyle />
-    </>
+    </Router>
   );
 }
 
