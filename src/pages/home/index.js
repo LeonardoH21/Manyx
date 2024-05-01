@@ -16,16 +16,20 @@ uma unha de cada vez. </p>
 <h2 className='lt3'> Ligue para o Agendamento</h2>
 
 
-<nav className='tl1'>
+{/* <nav className='tl1'>
 <h2> Home </h2>
-</nav>
+  </nav> */}
 
 <div className='tl2'>
 <Link to= '/login'> Login </Link> 
 </div>
 
+<div className='cabecalho'>
+<Link to= '/cabecalho'> Home </Link> 
+</div>
+
 <div className="container">
-      <img src="https://media.discordapp.net/attachments/822153718497411137/1228102185032613958/image.png?ex=662ad249&is=66185d49&hm=7139dfb2e10e0d1633cbb3ec5b939403b1ff5fb6666deee8264047fd0d513a8c&=&format=webp&quality=lossless&width=924&height=700" alt='foto' className="imagem1" />
+      <img src="https://media.discordapp.net/attachments/822153718497411137/1228102185032613958/image.png?ex=66336409&is=66321289&hm=8a92d170e6145e5ca2678914ee7771397cbdc82b1df9229660a7594642a7ebb4&=&format=webp&quality=lossless&width=924&height=700" alt='foto' className="imagem1" />
 </div>
 
 <div className="linha1"></div>
