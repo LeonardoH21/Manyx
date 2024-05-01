@@ -9,6 +9,9 @@ import Contato from './pages/Contato';
 import Sobre from './pages/Sobre';
 import Login from './pages/Login';
 import Cadastrar from './pages/Cadastrar';
+import Senha from './pages/Senha';
+import Cabecalho from './components/cabecalho';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -21,6 +24,9 @@ root.render(
 <Route path='/sobre' element={<Sobre />} />
 <Route path='/login' element={<Login />} />
 <Route path='/cadastrar' element={<Cadastrar />} />
+<Route path='/senha' element={<Senha/>} />
+<Route path='/cabecalho' element={<Cabecalho/>} />
+
    </Routes>
    </BrowserRouter>
   </React.StrictMode>
