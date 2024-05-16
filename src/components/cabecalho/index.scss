@@ -1,0 +1,35 @@
+.comp-cabecalho {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    background-color: #961778;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    
+}
+
+.logocb {
+    display: flex;
+    left: 87%;
+    position: absolute;
+    top: -29px;
+    color: #fff;
+    width: 120px; 
+    
+    
+  }
+
+  .nm2 {
+    display: flex;
+    right: 45%;
+    position: absolute;
+    top: 15%;
+    color: #fff;
+    width: 120px; 
+    margin-bottom: -50px; 
+    
+  }
+
